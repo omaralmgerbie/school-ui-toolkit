@@ -24,19 +24,19 @@ class RoutineCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    if (ScreenUtil() == null) {
+ 
       ScreenUtil.init(
         context,
         designSize :Size( ScreenSize.width,
          ScreenSize.height,),
         allowFontScaling: true,
       );
-    }
+
 
     return SchoolToolkitCard(
       active: true,
       height: ScreenUtil().setHeight(210),
-      width: ScreenUtil().setWidth(374),
+      width: ScreenUtil().setWidth(200),
       child: Column(
         mainAxisAlignment: MainAxisAlignment.start,
         crossAxisAlignment: CrossAxisAlignment.start,
@@ -66,7 +66,7 @@ class RoutineCard extends StatelessWidget {
               Column(
                 children: <Widget>[
                   Container(
-                    width: ScreenUtil().setWidth(240),
+                    width: ScreenUtil().setWidth(200),
                     child: Text(
                       '$classTopic',
                       style: TextStyle(
@@ -78,7 +78,7 @@ class RoutineCard extends StatelessWidget {
                     ),
                   ),
                   Container(
-                    width: ScreenUtil().setWidth(240),
+                    width: ScreenUtil().setWidth(200),
                     child: Text(
                       '${classType ?? ''}',
                       style: TextStyle(
@@ -142,7 +142,7 @@ class RoutineCard extends StatelessWidget {
                     ),
                   ),
                   Container(
-                    width: ScreenUtil().setWidth(190),
+                    width: ScreenUtil().setWidth(150),
                     height: ScreenUtil().setHeight(20),
                     alignment: Alignment.centerLeft,
                     child: Text(

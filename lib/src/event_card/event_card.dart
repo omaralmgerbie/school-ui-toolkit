@@ -25,14 +25,14 @@ class EventCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    if (ScreenUtil() == null) {
+    // if (ScreenUtil() == null) {
       ScreenUtil.init(
         context,
         designSize :Size( ScreenSize.width,
          ScreenSize.height,),
         allowFontScaling: true,
       );
-    }
+    // }
 
     return SchoolToolkitCard(
       width: width ?? ScreenUtil().setWidth(374),
