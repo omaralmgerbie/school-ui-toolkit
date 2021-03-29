@@ -34,7 +34,7 @@ dependencies:
   flutter_screenutil: ^3.2.0
   cached_network_image: ^2.2.0+1
   font_awesome_flutter: ^8.8.1
-  intl: ^0.16.1
+  intl: ">=0.16.1 <0.18.0"
   google_fonts: ^1.1.0
   nepali_date_picker: ^4.1.0
 
